@@ -2,7 +2,7 @@
   "interval": 30000,
   "status": {
     "type": "PLAYING",
-    "state": "Play.Nexus.Net",
+    "state": "Play.AnalogMC.IR",
     "url": ""
   }
 }
