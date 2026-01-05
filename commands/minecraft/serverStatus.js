@@ -41,17 +41,6 @@ module.exports = {
           .setTitle(`❌ Server Offline`)
           .setDescription(`The server at \`${serverIp}\` is currently offline.`)
           .addFields(
-            {
-              name: '🖥 IP Address',
-              value: `↳ \`${serverIp}\``,
-              inline: true,
-            },
-            {
-              name: '🛜 Port',
-              value: `↳ \`${data.port || 'Unknown'}\``,
-              inline: true,
-            }
-          )
           .setFooter({ text: 'Last updated' })
           .setTimestamp();
 
@@ -63,17 +52,6 @@ module.exports = {
         .setTitle(`${serverIp}`)
         .setDescription('**Server Online** 🟢')
         .addFields(
-          {
-            name: '🖥 IP Address',
-            value: `↳ \`${data.ip}\``,
-            inline: true,
-          },
-          {
-            name: '🛜 Port',
-            value: `↳ \`${data.port}\``,
-            inline: true,
-          },
-          {
             name: '🗺 Hostname',
             value: '↳ `' + data.hostname + '`' || 'Unknown',
             inline: false,
@@ -89,12 +67,6 @@ module.exports = {
             inline: false,
           },
           {
-            name: '🌅 MOTD',
-            value: `\`\`\`ansi\n\x1b[36m${data.motd?.clean[0]?.trim() || ''}\n${
-              data.motd?.clean[1]?.trim() || ''
-            }\x1b[0m\`\`\``,
-          }
-        )
         .setFooter({ text: 'Last updated' })
         .setTimestamp()
         .setThumbnail(`https://api.mcstatus.io/v2/icon/${serverIp}`);
