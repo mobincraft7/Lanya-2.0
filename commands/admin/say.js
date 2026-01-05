@@ -12,7 +12,7 @@ module.exports = {
 
     const modal = new ModalBuilder()
       .setCustomId('sayModal')
-      .setTitle('Nasl-1 Say System');
+      .setTitle('Aluxit System');
 
     const messageInput = new TextInputBuilder()
       .setCustomId('message')
