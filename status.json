@@ -2,7 +2,7 @@
   "interval": 30000,
   "status": {
     "type": "PLAYING",
-    "state": "Play.AnalogMC.IR",
+    "state": "Mc.Aluxit.IR",
     "url": ""
   }
 }
