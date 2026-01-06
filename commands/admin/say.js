@@ -5,7 +5,7 @@ module.exports = {
     .setName('say')
     .setDescription('Say something as the bot via a menu'),
   async execute(interaction) {
-    const REQUIRED_ROLE = '1411083330773848194';
+    const REQUIRED_ROLE = '1303692501550366820';
     if (!interaction.member.roles.cache.has(REQUIRED_ROLE)) {
       return interaction.reply({ content: '❌ You do not have permission to use this command.', ephemeral: true });
     }
